@@ -100,7 +100,6 @@ errors = [r'\.php on line [0-9]+',
         r'include_path',
         r'invalid query',
         r'is not allowed to access',
-        r'line',
         r'missing expression',
         r'mySQL error with query',
         r'mysql error',
@@ -152,8 +151,8 @@ class HTTPListener(IHttpListener):
                                                                [new_messages],
                                                                "Detailed error",
                                                                "Detailed error found, <b>%s</b>" % match_res,
-                                                               "Certain",
-                                                               "Medium"))
+                                                               "Firm",
+                                                               "High"))
 
 
 class CustomScanIssue(IScanIssue):
